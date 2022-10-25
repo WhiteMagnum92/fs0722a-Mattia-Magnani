@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #table{
 width: 100%;
 }
@@ -5,3 +6,12 @@ width: 100%;
 
     border:1px solid black
  }
+=======
+#table{
+width: 100%;
+}
+ table td, table th{
+
+    border:1px solid black
+ }
+>>>>>>> 492178065c2bcd80066d4ea8a7d07beece7e2ecf
