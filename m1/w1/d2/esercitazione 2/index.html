@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sviluppo di un pagina web - Blog Epicode</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg" alt="Epicode - Il blog dei developers">
+        <menu>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="job.html">Job</a></li>
+            </ul>
+        </menu>
+
+    </header>
+
+    <hr>
+
+    <h2>Come creare un template per i post</h2>
+
+    <p>di Mattia Magnani - pubblicato il 25-10-2022</p>
+
+    <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a
+        tutte la pagine</p>
+
+    <p>Le varie aree saranno quindi suddivise in:</p>
+
+    <ul>
+        <li>Contenuti di intestazione del tag "header"</li>
+        <li>Contenuti centrali variabili del tag "main"</li>
+        <li>Contenuti di fine pagina comuni, da inserire nel tag "footer"</li>
+        <li>Formattazione del codice</li>
+    </ul>
+
+    <h2>Formattazione del codice</h2>
+    <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i
+        passi saranno:
+    </p>
+
+    <ol>
+        <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato
+        </li>
+        <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso
+        </li>
+        <li>Applicare gli stili CSS
+        </li>
+        <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.
+        </li>
+    </ol>
+
+    <hr>
+    <div id="table">
+        <table>
+            <caption>Diffusione del CSS</caption>
+            <tr>
+                <th>Anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto Browser</th>
+            </tr>
+            <tr>
+                <th>2000</th>
+                <th>20%</th>
+                <th>17%</th>
+            </tr>
+
+            <tr>
+                <th>2002</th>
+                <th>35%</th>
+                <th>22%</th>
+            </tr>
+
+            <tr>
+                <th>2004</th>
+                <th>45%</th>
+                <th>42%</th>
+            </tr>
+
+            <tr>
+                <th>2008</th>
+                <th>80%</th>
+                <th>51%</th>
+            </tr>
+
+            <tr>
+                <th>2012</th>
+                <th>100%</th>
+                <th>76%</th>
+            </tr>
+
+        </table>
+
+    </div>
+    <div>
+
+        <p>Una volta ottimizzato il tutto avremo raggiunto in nostro obiettivi e saremo dei developers come loro:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dvOvHXruEDM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div>
+
+    <div>
+
+        <form>
+            <p>Vuoi iscriverti alla nostra newsletter?</p>
+            <input name="email" type="email" placeholder="Inserisci email">
+            <button>Invia</button>
+        </form>
+
+    </div>
+
+    <div>
+        <h3>Articoli correlati</h3>
+        <ul>
+            <li><a href="validare">validare il codice html</a><p>categoria: develop.Data 18-09-2020</p></li>
+            <li><a href="sintassi.html">Correggere la sintassi</a><p>categoria: develop.Data 18-09-2020</p></li>
+            <li><a href="ottimizzazione.html">Meno kb nella pagina</a><p>categoria: Ottimizzazione.Data 18-09-2020</p></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p> Blog Mattia Magnani. 2022 <br> <a href="mailto:mattia.magnani92@gmail.com">Email:mattia.magnani92@gmail.com</a></p>
+    </footer>
+
+</body>
+
+</html>
