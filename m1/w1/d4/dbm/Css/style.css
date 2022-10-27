@@ -1,0 +1,15 @@
+.quadrato{
+    border:1px solid black;
+    background-color: red;
+}
+
+#q1, #q3 {
+width: 100px;
+height: 100px;
+}
+
+#q2{
+    max-width: 600px;
+    min-height: 50px;
+}
+
