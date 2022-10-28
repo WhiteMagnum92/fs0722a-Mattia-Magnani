@@ -1,0 +1,126 @@
+/* Generale */
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fine Generale */
+
+/* Inzio Body */
+body {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+}
+
+/* Fine Body */
+
+/* Inzio Header */
+#logo {
+    background-color: black;
+    padding: 1rem;
+}
+
+/* Fine Header */
+
+/* inizio Main */
+#pc {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position-x: 35%;
+}
+
+.headings {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #25a2c3;
+    padding-top: 1.5rem;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.paragrafs {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#button {
+    background-color: #f04c2f;
+    font-family: 'Montserrat', Bold;
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 2.5rem;
+    border: none;
+}
+
+#tonda {
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+
+}
+
+#rosso {
+    background-color: #e22d0e;
+}
+
+#bianco h2 p {
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 2.5rem;
+}
+
+.midpage {
+    margin: 1rem;
+    border: 2px solid #dee1e3;
+    
+}
+
+/* Fine Main */
+/* Inizio footer */
+
+footer{
+    background-color: #25a2c3;
+}
+footer a{
+    color: #c8e7f0;
+    line-height: 1.2rem;
+}
+footer h2{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+#contattaci {
+
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+footer p{
+    color: white;
+    padding: 1.5rem;
+    opacity: 40%;
+    font-size: 0.8rem;
+}
+
+/* Inizio footer */
