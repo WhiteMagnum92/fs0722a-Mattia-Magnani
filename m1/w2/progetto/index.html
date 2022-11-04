@@ -10,37 +10,37 @@
 </head>
 
 <body>
-    
+    <P>"...Let me ask you something. <br>Have you ever seen a fierce animal you were sure would never bite? <br> Because i haven't" <br> Rorona Zoro</P>
     <div class="contenitore">
+        
+        <!--display-->
         <input type="text" id="numeri">
-        <div class="riga1">
+        <div class="keys">
+            <!--prima riga di tasti-->
             <div class="bottoni" data-simbolo="+" onclick="aggiungiCifra(this)">+</div>
             <div class="bottoni" data-simbolo="-" onclick="aggiungiCifra(this)">-</div>
-            <div class="bottoni" data-simbolo="*" onclick="aggiungiCifra(this)">*</div>
+            <div class="bottoni" data-simbolo="*" onclick="aggiungiCifra(this)">x</div>
             <div class="bottoni" data-simbolo="/" onclick="aggiungiCifra(this)">:</div>
-        </div>
-        <div class="riga2">
+            <!--seconda riga di tasti-->
             <div class="bottoni" data-simbolo="7" onclick="aggiungiCifra(this)">7</div>
             <div class="bottoni" data-simbolo="8" onclick="aggiungiCifra(this)">8</div>
             <div class="bottoni" data-simbolo="9" onclick="aggiungiCifra(this)">9</div>
-            <div class="bottoni" onclick="cancelladx()">◄</div>
-        </div>
-        <div class="riga3">
+            <div class="bottoni" onclick="cancelladx()">i</div>
+            <!--terza riga di tasti-->
             <div class="bottoni" data-simbolo="4" onclick="aggiungiCifra(this)">4</div>
             <div class="bottoni" data-simbolo="5" onclick="aggiungiCifra(this)">5</div>
             <div class="bottoni" data-simbolo="6" onclick="aggiungiCifra(this)">6</div>
-        </div>
-        <div class="riga4">
+            <!--quarta riga di tasti-->
             <div class="bottoni" data-simbolo="1" onclick="aggiungiCifra(this)">1</div>
             <div class="bottoni" data-simbolo="2" onclick="aggiungiCifra(this)">2</div>
-            <div class="bottoni" data-simbolo="3" onclick="aggiungiCifra(this)">3</div>          
-        </div>
-        <div class="riga5">
+            <div class="bottoni" data-simbolo="3" onclick="aggiungiCifra(this)">3</div>
+            <!--quinta riga di tasti-->
             <div class="bottoni" data-simbolo="0" onclick="aggiungiCifra(this)">0</div>
             <div class="bottoni" data-simbolo="." onclick="aggiungiCifra(this)">.</div>
             <div class="bottoni" onclick="svuota()">C</div>
+            <!--side bar-->
+            <div id="uguale" onclick="totale()">=</div>
         </div>
-        <span id="uguale" onclick="totale()">=</span>
     </div>
 
     <script src="js/script.js"></script>
