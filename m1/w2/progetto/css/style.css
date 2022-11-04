@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-image: url(../img/Zoro\ Blue\ -\ Redeye.jpg);
+    background-size: cover;
+}
+
+
+.contenitore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-bottom: -200px;
+    margin-top: -150px;
+    border: 1px black solid;
+    padding: 1rem;
+    border-radius: 5%;
+
+}
+
+.riga1,
+.riga2,
+.riga3,
+.riga4,
+.riga5 {
+    display: flex;
+    flex-direction:row;
+}
+.riga3,
+.riga4,
+.riga5 {
+    margin-right: 25%;
+}
+
+.bottoni {
+    background-color: aqua;
+    border: 1px black solid;
+    width: 70px;
+    height: 50px;
+    margin: 0.5em;
+    text-align: justify;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+
+
+input {
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 4em;
+    background-color: black;
+    color: whitesmoke;
+    text-align: right;
+    border-radius: 5%;
+}
+
+#uguale{
+    text-align: right;
+    background-color: aqua;
+    border: 1px black solid;
+    border-radius: 5%;
+    text-align: center;
+    
+
+}
