@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Questions</title>
 </head>
+
 <body>
+    <audio id="music" controls controlslist="play nodownload" autoplay>
+        <source src="assets/dbTheme.mp3" type="audio/mp3">
+    </audio>
     <header>
-            <div class="pie degree">
-                <span class="block"></span>
-                <span id="time">20</span>
-            </div>
+        <div id="logo">
+            <img id="log" src="assets/logo.png" alt="">
+        </div>
+        <div class="pie degree">
+            <span class="block"></span>
+            <span id="time">20</span>
+        </div>
     </header>
     <div id="question">
-         
+
     </div>
     <div id="risposte">
 
@@ -28,7 +36,8 @@
 
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
-    <script src="script/script.js"></script>
-    
+    <script src="script/scriptQuestions.js"></script>
+
 </body>
+
 </html>
