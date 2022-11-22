@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid black
+        }
+
+        header {
+            background-color: darkslateblue;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        nav {
+            background-color: darkred;
+            height: 30px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav li {
+            float: left;
+            border-right: 1px solid #fff;
+            width: 200px;
+            padding: 0 90px;
+        }
+
+        nav li:last-child {
+            border-right: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            line-height: 30px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: darkslateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Epicode</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Html</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Angular</a></li>
+                    <li><a href="#">Typescript</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <aside>
+            
+        </aside>
+        <section>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
