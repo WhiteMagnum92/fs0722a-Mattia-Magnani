@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    margin: 30px;
+}
+
+#contenitore{
+    display: flex;
+    justify-content: space-around;
+    background-color: #666666;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 600px;
+
+}
+#contenitore > div{
+    display: flex;
+    width: 10em;
+    height: 7em;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px #000;
+}
+.giallo{
+    background-color: #f6f6c2;
+    transform: rotate(-4deg);
+    animation-name: comparsa;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+}
+.verde{
+    background-color: #c5f5c8;
+    transform: rotate(5deg);
+    animation-name: comparsa;
+    animation-timing-function: linear;
+    animation-duration: 0.8s;
+}
+.viola{
+    background-color: #c4c4ef;
+    transform: rotate(-5deg);
+    animation-name: comparsa;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#contenitore div:hover{
+    z-index: 1;
+}
+.giallo:hover{
+    transform: scale(1.2) rotate(0);
+}
+.viola:hover{
+    transform: scale(1.2) rotate(0);
+}
+.verde:hover{
+    transform: scale(1.2) rotate(0);
+}
+@keyframes comparsa{
+    0%{transform: scale(0)};
+   100%{transform: scale(1)};
+}
+
