@@ -1,0 +1,40 @@
+@import 'varibili';
+@import 'bottone';
+body{
+    background-color: lightseagreen;
+    font-family:$font-principale;
+}
+.container{
+   margin: 0 3rem ;
+}
+ header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    border-bottom: 2px solid greenyellow;
+    a{
+        font-family: $font-principale;
+        margin: 1em;
+        text-decoration: none;
+        color: azure;
+        font-size: 2rem;
+    }
+ }
+ 
+ main{
+    display: flex;
+    align-items: center;
+    margin-top: 6em;
+ }
+ section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        font-size: 3.5rem;
+    }
+ }
+ #btns{
+    flex-direction: row;
+ }
+ 

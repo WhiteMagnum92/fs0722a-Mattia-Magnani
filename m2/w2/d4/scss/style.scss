@@ -1,0 +1,49 @@
+/*EXTEND*/
+.box{
+    border: 1px solid black;
+    background-color:red;
+    margin-bottom: 10px;
+}
+.mybox{
+    @extend .box;
+    font-size: 10px;
+}
+/*PLACEHOLDER*/
+%box2{                                  
+    border: 1px solid black;
+    background-color: aquamarine;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+}
+.myfirstbox{
+   @extend %box2;
+   font-size: 15px;
+}
+.mysecondbox{
+    @extend %box2;
+    font-size: 20px;
+}
+/*MIXIN*/
+@mixin baseButton ($bgColor) {
+    padding: 10px 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        background-color: $bgColor;
+        border: 1px solid white;
+        outline: 1px solid $bgColor;
+        box-shadow: 0 0 10px $bgColor;
+        color: white;
+         &:hover {
+            color:$bgColor;
+            background:white;
+            box-shadow:none;
+         }
+    
+}
+button.green{
+    @include baseButton(green)
+}
+button.red{
+    @include baseButton(red)
+}

@@ -1,0 +1,8 @@
+@each $color in darkgray,
+lightgreen,
+blue,
+sienna {
+    .colore_#{$color} {
+        background-color: #{$color};
+    }
+}

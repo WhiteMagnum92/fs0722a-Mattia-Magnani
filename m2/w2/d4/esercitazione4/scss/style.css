@@ -1,0 +1,88 @@
+header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 77, 121) 35%, rgb(0, 255, 162) 100%);
+  height: 4em;
+  border-radius: 15px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 1rem;
+}
+header ul li {
+  padding: 1rem;
+}
+header ul li:hover {
+  transition: 0.5s linear;
+  transform: scale(1.2) rotate(360deg);
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+main section {
+  display: flex;
+}
+main section button {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+}
+main section button:hover {
+  transform: scale(1.5);
+}
+
+aside {
+  margin-left: 1rem;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 100px;
+}
+aside ul li {
+  padding: 1rem;
+  color: white;
+  border-bottom: 1px dashed white;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(0, 255, 162) 0%, rgb(9, 77, 121) 35%, rgb(2, 0, 36) 100%);
+  height: 4em;
+  text-align: center;
+  border-radius: 15px;
+}
+footer p {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+  font-family: "Kanit", sans-serif;
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */

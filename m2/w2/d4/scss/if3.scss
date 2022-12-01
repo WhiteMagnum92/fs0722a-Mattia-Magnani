@@ -1,0 +1,22 @@
+$template:dark;
+$bg-dark:#000;
+$fg-dark:#999;
+$bg-bright:#eeee99;
+$fg-bright:#eeee99;
+$bg-blue: rgb(42, 42, 143);
+$fg-blue: rgb(59, 217, 217);
+
+body {
+    @if $template == dark {
+        background-color: $bg-dark;
+        color: $fg-bright;
+        }@else if $template == bright{
+            background-color: $bg-bright;
+            color: $fg-dark;
+        }@else{
+            background-color: $bg-blue;
+            color: $fg-blue;
+        }
+
+    }
+    

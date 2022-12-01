@@ -1,0 +1,91 @@
+nav {
+    display: block;
+
+    ul {
+        display: inline;
+        background-color: aquamarine;
+        border: 1px solid black;
+    }
+}
+
+/*SELETTORI NIDIFICATI*/
+#main {
+    p {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: 1.2em;
+        padding-left: 10px;
+    }
+
+    a {
+        color: darkred;
+        text-decoration: none;
+    }
+}
+
+/*SELETTORI NIDIFICATI 2*/
+#main2 {
+    background-color: red;
+
+    div {
+        color: lightblue;
+
+        .red {
+            color: lightseagreen;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*NESTING*/
+.esempio {
+    background-color: cornflowerblue;
+
+    h1 {
+        color: darkblue;
+    }
+
+    .titolo {
+        font-size: 52px;
+    }
+
+    .bottone {
+        background-color: lightgreen;
+    }
+}
+/*KEYWORD &*/
+#pippo{
+    color: lightsalmon;
+    font-size: 1.5rem;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.esempio2{
+    background-color: blue;
+    h1{
+        color:aqua;
+        &:hover{
+            font-size: 52px;
+        }
+    }
+    .bottone{
+        background-color: greenyellow;
+    }
+}
+/* PROPRIETA NIDIFICATE*/
+#main4{
+    font: {
+        family:Georgia;
+        size: 1.5em;
+        weight:bold;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin devices ($breakpoint) {
+    @if $breakpoint == mobile {
+        @media only screen and (min-width:480px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (min-width:680px) {
+            @content;
+        }
+    }
+}
+
+body {
+    background-color: yellowgreen;
+
+    @include devices(mobile) {
+        background-color: aqua;
+    }
+
+    @include devices(tablet) {
+        background-color: orange;
+    }
+}

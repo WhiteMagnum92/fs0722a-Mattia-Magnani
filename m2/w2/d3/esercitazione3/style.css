@@ -1,0 +1,53 @@
+button {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 50px;
+  font-family: Georgia;
+  background-color: coral;
+  margin-right: 1em;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+body {
+  background-color: lightseagreen;
+  font-family: Georgia;
+}
+
+.container {
+  margin: 0 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid greenyellow;
+}
+header a {
+  font-family: Georgia;
+  margin: 1em;
+  text-decoration: none;
+  color: azure;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin-top: 6em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section h2 {
+  font-size: 3.5rem;
+}
+
+#btns {
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */

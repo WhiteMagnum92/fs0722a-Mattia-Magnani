@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Sass Direttive</title>
+</head>
+<body>
+<!--EXTEND-->
+<!--lo uso nel caso in cui un selettore eredita le caratteristiche di un'altro con l'aggiunta di alcune specifiche-->
+<!--@extend indica al compilatore che una classe eredita tutte le proprieta di una classe precedentemente definita-->
+<!--esempio-->
+
+<div class="box">Box</div>                <!--box definisce bordo e colore-->
+<div class="mybox">My Box</div>           <!--mybox eredita in + aggiunge font-size-->
+
+
+<!--PLACEHOLDER E DIRETTIVA %-->
+<!--lo uso quando puo essere utile definire una classe che ha il solo scopo di essere estesa-->
+<!--la sintassi prevede di utilizzare un segnaposto % (placeholder) che definisce uno stile che non viene renderizzato ma soltanto esteso-->
+<!--esempio-->
+
+<div class="myfirstbox">My 1st Box</div>
+<div class="mysecondbox">My 2nd Box</div>
+
+<!--MIXINS-->
+<!--a volte extend non e sufficiente a rendere automatiche diverse modifiche insieme-->
+<!--crea gruppi di proprieta css che si ripetono all'interno del foglio di stile e ci da la possibilita di applicare dei parametri arbitrari-->
+<!--esempio-->
+<!--
+<style>
+    .button{
+        padding: 10px 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        background-color: green;
+        border: 1px solid white;
+        outline: 1px solid green;
+        box-shadow: 0 0 10px green;
+        color: white;
+         &:hover {
+            color:green;
+            background:white;
+            box-shadow:none;
+    }
+</style>
+-->
+<button class="red">HELLO!</button>
+<button class="green">HELLO!</button>
+
+    
+</body>
+</html>

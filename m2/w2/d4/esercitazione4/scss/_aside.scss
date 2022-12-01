@@ -1,0 +1,17 @@
+aside {
+    margin-left: 1rem ;
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        width: 100px;
+        
+
+        li {
+            padding: 1rem;
+            color: white;
+            border-bottom: 1px dashed white;
+        }
+    }
+}

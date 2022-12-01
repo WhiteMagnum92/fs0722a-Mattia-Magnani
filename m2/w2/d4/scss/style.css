@@ -1,0 +1,60 @@
+/*EXTEND*/
+.box, .mybox {
+  border: 1px solid black;
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.mybox {
+  font-size: 10px;
+}
+
+/*PLACEHOLDER*/
+.mysecondbox, .myfirstbox {
+  border: 1px solid black;
+  background-color: aquamarine;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.myfirstbox {
+  font-size: 15px;
+}
+
+.mysecondbox {
+  font-size: 20px;
+}
+
+/*MIXIN*/
+button.green {
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: green;
+  border: 1px solid white;
+  outline: 1px solid green;
+  box-shadow: 0 0 10px green;
+  color: white;
+}
+button.green:hover {
+  color: green;
+  background: white;
+  box-shadow: none;
+}
+
+button.red {
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: red;
+  border: 1px solid white;
+  outline: 1px solid red;
+  box-shadow: 0 0 10px red;
+  color: white;
+}
+button.red:hover {
+  color: red;
+  background: white;
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */
