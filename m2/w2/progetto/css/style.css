@@ -1,0 +1,32 @@
+header {
+  background-color: #6b17f1;
+}
+
+#all {
+  position: absolute;
+}
+
+#section1 {
+  background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+  background-size: cover;
+  background-position-y: 20%;
+  height: 50vh;
+}
+#section1 button {
+  background: #6b17f1;
+  color: white;
+  border-radius: 5px;
+}
+
+#section3 img {
+  width: 30%;
+}
+
+.imgs {
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #6b17f1;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
