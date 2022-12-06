@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+<body>
+    <script>
+        var teacher = {
+            name: 'Federico',
+            surname: 'De Ambrosis',
+            sayHello: function(){
+                alert ('Hello World, I\'m' + ' ' + this.name + ' '+ this.surname);
+            }
+        }
+        teacher.sayHello();
+        //possiamo bypassare this accedendo a una variabile esterna -> rende il condice instabile
+        let user={
+            name: 'John',
+            age:30,
+            sayHi(){
+                aler(user.name); //accedo alla variabile esterna anziche this
+            }
+        }
+        let admin=user;
+        user=null;         //sovrascrivo user
+        admin.sayHi();     //errore -> non possiamo leggere la proprieta name null
+
+        // this puo essere usata il qualsiasi funzione, anche se non e il metodo di un oggetto
+        function sayHi(){
+            alert(this.name);// non restituisce errore di sintassi
+            //this viene valutato al momento dell'esecuzione
+        }
+    </script>
+</body>
+</html>

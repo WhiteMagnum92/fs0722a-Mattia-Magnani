@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costruttore di oggetti</title>
+</head>
+
+<body>
+    <!--immaginiamo di avere bisogno di piu oggetti dello stesso tipo ad esempio piu oggetti persona che condividono la stessa struttura-->
+
+    <script>
+        var persona = {
+            nome: 'Mario',
+            cognome: 'Rossi',
+            indirizzo: 'via Garibaldi, 50 - Roma',
+            email: 'mario.rossi@epicode.it',
+            mostraNomeCompleto: function () { },
+            calcolaCodiceFiscale: function () { }
+        }
+        //se usassimo solo la notazione letterale saremo costretti a ripetere la definizione per ogni oggetto
+        //otteniamo un codice non riutilizzabile
+        //per definire da zero oggetti che hanno la stessa struttura esiste un costruttore.
+        //un costruttore e una funzione JS che invochiamo tramite l'operatore new
+        function persona() {
+            this.nome = '',
+                this.cognome = '',
+                this.indirizzo = '',
+                this.email = '',
+                this.mostraNomeCompleto = function () { },
+                this.calcolaCodiceFiscale = function () { }
+
+        }
+        //
+    </script>
+</body>
+
+</html>
