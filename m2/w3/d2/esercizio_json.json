@@ -1,0 +1,31 @@
+{
+    "perfomer": "Parkway Drive",
+    "debutto": "2005",
+    "discografia": [
+        {
+            "primo-album": "Killing With a Smile",
+            "secondo-album": "Horizons",
+            "preferite-Horizons": [
+                {
+                    "canzone-1": "Boneyards",
+                    "canzone-2": "Horizons"
+                }
+            ],
+            "terzo-album": "Deep Blue",
+            "preferite-Deep-Blue": [
+                {
+                    "canzone-1": "Sleepwalker",
+                    "canzone-2": "Hollow",
+                    "canzone-3": "Karma"
+                }
+            ],
+            "quarto-album": "Atlas",
+            "preferite-Atlas": [
+                {
+                    "canzone-1": "Wild Eyes",
+                    "canzone-2": "Sleight of Hand"
+                }
+            ]
+        }
+    ]
+}
