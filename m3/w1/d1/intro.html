@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        problemi di javascrypt: 1. tende a diventare disordinato
+        2. poca capacita di abbracciare le caratteristiche dell'orientamento ad oggetti
+        3. il controllo del tipo del dato
+        4. non c'e controllo degli errori (non c'e debug in fase di compilazione)
+        -> typescript "Typescript e javascrypt per lo sviluppo su scala di applicazioni"
+        differenze: 1. tipizzazione forte (dichiaro i tipi di dati)
+        2. e orientato ad oggetti
+        3. e contemporaneamente un linguaggio e un insieme di strumenti
+        Typescript e Javascript piu alcune funionalita aggiuntive
+        typescript (.ts) e un superset tipizzato di javascript (.js)
+        typescript viene compilato in js  (sono i file .js che aggancio al browser)
+        dalle conoscenze base di javascript aggiungo delle sintassi dedicaate di typescript e poi compilo da .ts a .js
+        il codice typescript viene convertito nell'equivalente javascript per essere eseguito
+        il codice ompilato e compatibile con qualsiasi framework, libreria etc javascript esistente
+
+        perche usare Typescript?
+        - transpiler -> mentre interpreto il codice .ts per generare l'output .js ho il controllo degli errori
+        - strong static typing -> sia controllo del dato sia una sintassi per dedurlo o modificarlo 
+        Componenti Typescript
+        - linguaggio (sintassi, keyword, annotazioni di tipo)
+        - compiler (tsc) converte le istruzioni ts nell'equivalente js
+        - Typescript language service -> servizio che ci aiuta nella compilazione del codice
+        - qualsiasi script js e anche codice ts valido (quindi posso fare il passaggio gradualmente)
+         
+        Passaggi:
+        - salvo il file in formato .ts
+        - apr il terminale
+        - tsc + nome del file .ts (controllo di essere nella cartella del file)
+        - node + nome del file .js (eseguo il console log)
+
+        flag del compilatore
+        --help (stampa la guida)
+        --watch (controllare le modifiche e le ricompila)
+        --module (carica moduli esterni)
+        --target (imposta la versione di ECMA di destinazione)
+        --out (compilare piu file in un unico output)
+
+        tsconfig.json
+        https://www.typescriptlang.org/docs/handbook/configuring-watch.html
+
+        regole di sintassi basilari
+        - nomenclatura degli identificatori (regole molto simili a js)
+        - possono includere caratteri e cifre ma non possono iniziare con una cifra
+        - non posso usare caratteri speciali ad eccezione di $ e _
+        - non possono essere parole chiave (switch, for, while, this, static, try, extends, ...)
+        - devono essere unici
+        - case sensitive (distinzione tra maiuscole e minuscole)
+        - non possono contenere spazi 
+
+        - ts ignora gli spazi (uso spazi e tab per tenere il codice pulito)
+        - i ; sono facoltativi (se pero metto + istruzioni sulla stessa rifa li dovro separare con ;)
+        - i commenti possono essere single line // o multiriga /**/
+
+        typescript e js orientato ad oggetti -> consideriamo un programma come una raccolta di oggetti che comnuicano tra loro tramite metodi
+        -> gli oggetti rappresentano un'entita (hanno tre caratteristiche di stato, comportamento, identita)
+        -> gli oggetti hanno delle classi cioe dei modelli su cui vengono creati
+        ->
+
+        Tipi di dati in ts
+        - number - string - boolean - null - undefined
+        - undefined -> la variabile non ha alcun valore
+        - null -> la variabile e impostata su un valore che non e definito (pero esiste)
+
+        - void -> assenza di valore -> lo uso quando una funzione non restituisce nessun valore 
+        function myFunc():void{
+            console.log("messaggio")
+        }
+        - lo si usa solo sulle funzione perche se lo utilizzzo su una variabile poi il suo valore potra essere riassegnato solo null o undefined
+        - any -> la varibile contiene qualsiasi tipo di dato (come js)
+        var myVar:any = 123;
+        myVar ='una stringa';
+        myVar = true;  //assume dinamicamente qualsiasi valore come in js
+
+        i tipi definiti dall'utente: enum, classi, interfacce, array, tuple
+
+
+    -->
+</body>
+
+</html>
