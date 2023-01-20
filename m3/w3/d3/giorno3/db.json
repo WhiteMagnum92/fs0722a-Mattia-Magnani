@@ -1,0 +1,13 @@
+{
+  "users": [],
+  "sports": [
+    {
+      "nome": "calcio",
+      "id": 1
+    },
+    {
+      "nome": "tennis",
+      "id": 2
+    }
+  ]
+}

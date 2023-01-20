@@ -1,0 +1,10 @@
+<div class="text-center">
+  <h1 appColora [defaultColor]="'cyan'">Ciao</h1>
+  <h3>
+    Hello <span [appColora]="'#a657e'" appColora [defaultColor]="'blue'">World!</span>
+  </h3>
+  <button type="button" class="btn btn-primary" (click)="active = !active">Toggle</button>
+
+  <h3 *ngIf="active">Riga di testo predefinita</h3>
+  <h3 *appComparsa="active"> Riga di testo alternativa</h3>
+</div>

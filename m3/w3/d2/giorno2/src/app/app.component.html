@@ -1,0 +1,43 @@
+<div class="container">
+  <h1 class="tesct-center"></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form #form="ngForm" (ngSubmit)="submit()">
+          <div ngModelGroup="userInfo" id="userInfo" #userGroup="ngModelGroup">
+            <label for="username">Username</label>
+            <input type="text" id="username" [ngModel]="userForm.defUserName" name="username" class="form-control"
+              required #username="ngModel">
+            <p *ngIf="username.invalid && username.touched"><strong>Questo campo e obbligatorio</strong></p>
+
+            <button type="button" class="btn btn-outline-info mt-1" (click)="generateUsername()">Genera
+              Username</button>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" [ngModel]="userForm.email" required class="form-control"
+                #email="ngModel">
+            </div>
+            <p *ngIf="email.invalid && email.touched"><strong>Compilare correttamente il campo</strong></p>
+            <div class="form-group">
+              <label for="secret">Domanda Segreta</label>
+              <select name="secret" id="secret" class="form-select" [ngModel]="userForm.question">
+                <option value="madre">Nome di battesimo di tua madre</option>
+                <option value="padre">Nome di battesimo di tuo padre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea name="risposta" rows="1" class="form-control" [(ngModel)]="risposta"></textarea>
+            </div>
+            <p>La tua risposta e:{{risposta}}</p>
+            <div class="radio" *ngFor="let genere of generi">
+              <label for="">
+                <input type="radio" name="sesso" ngModel [value]="genere.value" required>{{genere.label}}
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" [disabled]="form.invalid">invia</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
