@@ -1,0 +1,25 @@
+package parte1;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Asterisco extends Thread {
+
+	String str = "*";
+	static Logger log = LoggerFactory.getLogger(MainPt1.class);
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			log.info(str);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+	}
+	
+}
