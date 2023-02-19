@@ -1,9 +1,18 @@
 package model;
 
-public class Libro extends CatalogoBibliotecario{
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue("Libro")
+public class Libro extends CatalogoBibliotecario {
 	
-	String autore;
-	String genere;
+	@Column (name="Autore")
+	private String autore;
+	
+	@Column (name="Genere")
+	private String genere;
 	
 	public Libro() {
 		super();
@@ -28,7 +37,9 @@ public class Libro extends CatalogoBibliotecario{
 
 	@Override
 	public String toString() {
-		return "Libro [autore=" + autore + ", genere=" + genere + "]";
+		return "Libro [autore=" + autore + ", genere=" + genere + super.toString() + "]";
 	}
+
+	
 	
 }

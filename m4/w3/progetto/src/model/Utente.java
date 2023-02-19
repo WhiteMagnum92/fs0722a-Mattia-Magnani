@@ -1,13 +1,37 @@
 package model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Utente {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-	String nome;
-	String Cognome;
-	Date dataNascita;
-	Long nTessera;
+@Entity
+public class Utente implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id 
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column (name="N_Tessera")
+	private Integer nTessera;  
+   
+    @Column (name="Nome")
+	private String nome;
+    
+    @Column (name="Cognome")
+	private String cognome;
+    
+    @Column (name="Data_Nascita")
+	private Date dataNascita;
+    
+   
 
 	public Utente() {
 		super();
@@ -23,11 +47,11 @@ public class Utente {
 	}
 
 	public String getCognome() {
-		return Cognome;
+		return cognome;
 	}
 
 	public void setCognome(String cognome) {
-		Cognome = cognome;
+		this.cognome = cognome;
 	}
 
 	public Date getDataNascita() {
@@ -38,18 +62,15 @@ public class Utente {
 		this.dataNascita = dataNascita;
 	}
 
-	public Long getnTessera() {
+	public Integer getnTessera() {
 		return nTessera;
-	}
-
-	public void setnTessera(Long nTessera) {
-		this.nTessera = nTessera;
 	}
 
 	@Override
 	public String toString() {
-		return "Utente [nome=" + nome + ", Cognome=" + Cognome + ", dataNascita=" + dataNascita + ", nTessera="
+		return "Utente [nome=" + nome + ", Cognome=" + cognome + ", dataNascita=" + dataNascita + ", nTessera="
 				+ nTessera + "]";
 	}
+
 
 }

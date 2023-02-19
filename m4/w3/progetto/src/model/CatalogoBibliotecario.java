@@ -1,11 +1,32 @@
 package model;
 
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "Tipologia")
 public abstract class CatalogoBibliotecario {
 	
-	Integer isbn;
-	String  titolo;
-	Integer annoPubblicazione;
-	Integer numeroPagine;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column (name="ISBN")
+	private Integer isbn;
+	
+	@Column (name="Titolo")
+	private String  titolo;
+	
+	@Column (name="Anno_Pubblicazione")
+	private Integer annoPubblicazione;
+	
+	@Column (name="N_Pagine")
+	private Integer numeroPagine;
 	
 	public CatalogoBibliotecario() {
 		super();
@@ -13,10 +34,6 @@ public abstract class CatalogoBibliotecario {
 
 	public Integer getIsbn() {
 		return isbn;
-	}
-
-	public void setIsbn(Integer isbn) {
-		this.isbn = isbn;
 	}
 
 	public String getTitolo() {
@@ -45,8 +62,8 @@ public abstract class CatalogoBibliotecario {
 
 	@Override
 	public String toString() {
-		return "CatalogoBibliotecario [isbn=" + isbn + ", titolo=" + titolo + ", annoPubblicazione=" + annoPubblicazione
-				+ ", numeroPagine=" + numeroPagine + "]";
+		return " isbn=" + isbn + ", titolo=" + titolo + ", annoPubblicazione=" + annoPubblicazione
+				+ ", numeroPagine=" + numeroPagine ;
 	}
 	
 	
