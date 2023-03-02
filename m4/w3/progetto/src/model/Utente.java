@@ -52,6 +52,7 @@ public class Utente implements Serializable {
 
 	public void setCognome(String cognome) {
 		this.cognome = cognome;
+		
 	}
 
 	public Date getDataNascita() {
