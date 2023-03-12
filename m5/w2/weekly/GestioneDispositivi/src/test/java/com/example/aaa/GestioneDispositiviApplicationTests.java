@@ -1,10 +1,10 @@
-package com.weekly_project_Jwt;
+package com.example.aaa;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WeeklyProjectJwtApplicationTests {
+class GestioneDispositiviApplicationTests {
 
 	@Test
 	void contextLoads() {
